@@ -106,8 +106,6 @@ for (let i = 0; i < universes.length; i++) {
     var genre = document.createElement("div");
     genre.className = "genre";
     card.appendChild(genre);
-    // var genreText = document.createTextNode(universes[i].genre);
-    // genre.appendChild(genreText);
     for (let x = 0; x < universes[i].genre.length; x++) {
         var genreType = document.createElement("div");
         genreType.className = "genreType";
@@ -121,8 +119,12 @@ for (let i = 0; i < universes.length; i++) {
     card.appendChild(description);
     var descriptionText = document.createTextNode(universes[i].description);
     description.appendChild(descriptionText);
-    var originText = document.createTextNode(universes[i].origin);
-    description.appendChild(originText);
+
+    var origins = document.createElement("div");
+    origins.className = "origin";
+    card.append(origins);
+    var originText = document.createTextNode("Origin: " + universes[i].origin);
+    origins.appendChild(originText);
 
     var site = document.createElement("div");
     site.className = "site";
