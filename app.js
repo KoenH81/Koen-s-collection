@@ -80,15 +80,15 @@ const universes = [
         site: 'https://gameofthrones.fandom.com/wiki/Game_of_Thrones_Wiki'
     },
 ]
-//console.log(universes)
+var display = document.createElement("div");
+display.className = "display";
+document.body.append(display);
 
-// create loop + create elements + append = done
-// create text nodes + append = done
 
 for (let i = 0; i < universes.length; i++) {
     var card = document.createElement("div");
     card.className = "card";
-    document.body.appendChild(card);
+    display.appendChild(card);
 
     var image = document.createElement("div");
     image.className = "image";

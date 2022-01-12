@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  width: 100vw;
+  background-color: grey;
+}
+
+body .display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  background-color: green;
+}
+
+body .display .card {
+  width: 300px;
+  margin: auto;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur 20px;
+          backdrop-filter: blur 20px;
+}
+
+body .display .card .image {
+  height: 160px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+body .display .card .image img {
+  width: 110%;
+  display: block;
+  border-radius: 5px;
+}
+
+body .display .card .title {
+  width: 98%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  text-align: center;
+}
+
+body .display .card .genre {
+  width: 98%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+body .display .card .description {
+  width: 98%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+body .display .card .site {
+  border-radius: 5px;
+  background-color: lightgray;
+}
+/*# sourceMappingURL=style.css.map */
