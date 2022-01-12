@@ -130,9 +130,14 @@ for (let i = 0; i < universes.length; i++) {
     site.className = "site";
     card.appendChild(site);
     var siteAnker = document.createElement("a");
-    siteAnker.setAttribute("href", universes[i].site);
-    siteAnker.innerText = "Wiki";
-    site.appendChild(siteAnker);
+    // siteAnker.setAttribute("href", universes[i].site,);
+    // siteAnker.innerText = "Wiki";
+    // site.appendChild(siteAnker);
+    siteAnker.href = universes[i].site;
+    var search = document.createElement("img");
+    search.setAttribute("src", "./images/search.jpg");
+    site.append(siteAnker);
+    siteAnker.append(search);
 
 }
 console.log(document.body.children) 

@@ -77,13 +77,37 @@ body .display .card .genre .genreType {
 }
 
 body .display .card .description {
+  position: relative;
   width: 98%;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding-bottom: 2px;
+}
+
+body .display .card .description:after {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 1px;
+  margin: auto;
+  background-color: black;
+  top: 35px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+body .display .card .origin {
+  width: 98%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-bottom: 2px;
 }
 
 body .display .card .site {
   border-radius: 5px;
   background-color: lightgray;
+  padding-left: 5px;
 }
 /*# sourceMappingURL=style.css.map */
