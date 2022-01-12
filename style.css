@@ -53,9 +53,27 @@ body .display .card .title {
 }
 
 body .display .card .genre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 2px;
   width: 98%;
   margin: auto;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 2px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+body .display .card .genre .genreType {
+  width: 80px;
+  background-color: lightgray;
+  border-radius: 25px;
+  padding: 2px;
+  text-align: center;
 }
 
 body .display .card .description {
