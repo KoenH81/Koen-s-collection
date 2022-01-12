@@ -18,7 +18,7 @@ const universes = [
     {
         title: 'Forgotten Realms',
         description: 'Classic fantasy setting created for Dungeons & Dragons',
-        genre: 'Fantasy',
+        genre: ['Fantasy'],
         origin: 'Dungeons & Dragons',
         image: './images/forgotten.jpg',
         site: 'https://forgottenrealms.fandom.com/wiki/Main_Page'
@@ -34,7 +34,7 @@ const universes = [
     {
         title: 'Discworld',
         description: 'Humoristic fantasy setting taking place on a disc-like planet.',
-        genre: 'Fantasy',
+        genre: ['Fantasy'],
         origin: 'Novels by Terry Pratchett',
         image: './images/disc.jpg',
         site: 'https://discworld.fandom.com/wiki/Main_Page'
@@ -42,7 +42,7 @@ const universes = [
     {
         title: 'Star Wars',
         description: 'Scifi setting set in a galaxy far, far away.',
-        genre: 'Scifi',
+        genre: ['Scifi'],
         origin: 'George Lucas',
         image: './image/star.jpg',
         site: 'https://starwars.fandom.com/wiki/Main_Page'
@@ -50,7 +50,7 @@ const universes = [
     {
         title: 'Dune',
         description: 'Scifi universe set in a distant future of humanity.',
-        genre: 'Scifi',
+        genre: ['Scifi'],
         origin: 'Novels by Frank Herbert',
         image: './images/dune.jpg',
         site: 'https://dune.fandom.com/wiki/Dune_Wiki'
@@ -66,7 +66,7 @@ const universes = [
     {
         title: 'Middle-earth',
         description: 'Classical fantassy setting. The origin of a lot of fantasy tropes.',
-        genre: 'Fanatsy',
+        genre: ['Fanatsy'],
         origin: 'Novels by J.R.R Tolkien',
         image: './images/tolkien.jpg',
         site: 'https://lotr.fandom.com/wiki/Middle-earth'
@@ -74,7 +74,7 @@ const universes = [
     {
         title: 'World of A Song of Ice and Fire',
         description: 'Fantasy setting taking place on the fictional continents Westeros and Essos.',
-        genre: 'Fantasy',
+        genre: ['Fantasy'],
         origin: 'Novels by George R.R. Martin',
         image: './images/thrones.jpg',
         site: 'https://gameofthrones.fandom.com/wiki/Game_of_Thrones_Wiki'
@@ -106,8 +106,15 @@ for (let i = 0; i < universes.length; i++) {
     var genre = document.createElement("div");
     genre.className = "genre";
     card.appendChild(genre);
-    var genreText = document.createTextNode(universes[i].genre);
-    genre.appendChild(genreText);
+    // var genreText = document.createTextNode(universes[i].genre);
+    // genre.appendChild(genreText);
+    for (let x = 0; x < universes[i].genre.length; x++) {
+        var genreType = document.createElement("div");
+        genreType.className = "genreType";
+        genre.append(genreType);
+        var genreTypeText = document.createTextNode(universes[i].genre[x])
+        genreType.append(genreTypeText);
+    }
 
     var description = document.createElement("div");
     description.className = "description";
