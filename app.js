@@ -135,6 +135,7 @@ for (let i = 0; i < universes.length; i++) {
     // site.appendChild(siteAnker);
     siteAnker.href = universes[i].site;
     var search = document.createElement("img");
+    search.className = "search";
     search.setAttribute("src", "./images/search.jpg");
     site.append(siteAnker);
     siteAnker.append(search);

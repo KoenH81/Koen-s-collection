@@ -8,11 +8,13 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   background-color: grey;
 }
 
 body .display {
+  width: 100%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,20 +23,19 @@ body .display {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 5px;
-  background-color: green;
+  background-image: url(./images/galaxy.jpg);
 }
 
 body .display .card {
   width: 300px;
   margin: auto;
   border-radius: 5px;
-  -webkit-backdrop-filter: blur 20px;
-          backdrop-filter: blur 20px;
 }
 
 body .display .card .image {
   height: 160px;
   border-radius: 5px;
+  border-right: 2px solid black;
   overflow: hidden;
 }
 
@@ -47,7 +48,8 @@ body .display .card .image img {
 body .display .card .title {
   width: 98%;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-right: 2px solid black;
   font-weight: bold;
   text-align: center;
 }
@@ -65,12 +67,14 @@ body .display .card .genre {
   padding-top: 2px;
   padding-bottom: 2px;
   padding-right: 2px;
-  background-color: rgba(255, 255, 255, 0.2);
+  border-right: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 body .display .card .genre .genreType {
   width: 80px;
-  background-color: lightgray;
+  background-color: #fefefe;
+  border: 1px solid grey;
   border-radius: 25px;
   padding: 2px;
   text-align: center;
@@ -80,7 +84,8 @@ body .display .card .description {
   position: relative;
   width: 98%;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.2);
+  border-right: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.4);
   text-align: center;
   padding-bottom: 2px;
 }
@@ -101,13 +106,36 @@ body .display .card .description:after {
 body .display .card .origin {
   width: 98%;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.2);
+  border-right: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.4);
   padding-bottom: 2px;
 }
 
 body .display .card .site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 5px;
-  background-color: lightgray;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 30px;
+  background-color: #fefefe;
   padding-left: 5px;
+}
+
+body .display .card .site .search {
+  display: block;
+  border: 1px solid black;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 2px black;
+          box-shadow: 3px 2px black;
+}
+
+body .display .card .site .search:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=style.css.map */
