@@ -12,7 +12,7 @@ const universes = [
         description: 'Dystopian militaristic scifi setting with fantasy races.',
         genre: ['Scifi', 'Fantasy', 'Dystopia'],
         origin: 'Games Workshop',
-        image: '',
+        image: './images/warhammer40k.jpeg',
         site: 'https://warhammer40k.fandom.com/wiki/Warhammer_40k_Wiki'
     },
     {
@@ -20,7 +20,7 @@ const universes = [
         description: 'Classic fantasy setting created for Dungeons & Dragons',
         genre: 'Fantasy',
         origin: 'Dungeons & Dragons',
-        image: '',
+        image: './images/forgotten.jpg',
         site: 'https://forgottenrealms.fandom.com/wiki/Main_Page'
     },
     {
@@ -28,7 +28,7 @@ const universes = [
         description: 'Gothic horror fantasy setting created for Dungeons & Dragons',
         genre: ['Grimdark', 'Fantasy', 'Horror'],
         origin: 'Dungeons & Dragons',
-        image: '',
+        image: './images/ravenloft.jpg',
         site: 'https://ravenloft.fandom.com/wiki/Ravenloft_Wiki'
     },
     {
@@ -36,7 +36,7 @@ const universes = [
         description: 'Humoristic fantasy setting taking place on a disc-like planet.',
         genre: 'Fantasy',
         origin: 'Novels by Terry Pratchett',
-        image: '',
+        image: './images/disc.jpg',
         site: 'https://discworld.fandom.com/wiki/Main_Page'
     },
     {
@@ -44,7 +44,7 @@ const universes = [
         description: 'Scifi setting set in a galaxy far, far away.',
         genre: 'Scifi',
         origin: 'George Lucas',
-        image: '',
+        image: './image/star.jpg',
         site: 'https://starwars.fandom.com/wiki/Main_Page'
     },
     {
@@ -52,7 +52,7 @@ const universes = [
         description: 'Scifi universe set in a distant future of humanity.',
         genre: 'Scifi',
         origin: 'Novels by Frank Herbert',
-        image: '',
+        image: './images/dune.jpg',
         site: 'https://dune.fandom.com/wiki/Dune_Wiki'
     },
     {
@@ -60,7 +60,7 @@ const universes = [
         description: 'Scifi fantasy setting taking place in a near-infinite number of different planes.',
         genre: ['Scifi', 'Fanatsy']
         origin: 'Magic the Gathering',
-        image: '',
+        image: './images/mtg.jpeg',
         site: 'https://mtg.fandom.com/wiki/Main_Page'
     },
     {
@@ -68,7 +68,7 @@ const universes = [
         description: 'Classical fantassy setting. The origin of a lot of fantasy tropes.',
         genre: 'Fanatsy',
         origin: 'Novels by J.R.R Tolkien',
-        image: '',
+        image: './images/tolkien.jpg',
         site: 'https://lotr.fandom.com/wiki/Middle-earth'
     },
     {
@@ -76,7 +76,7 @@ const universes = [
         description: 'Fantasy setting taking place on the fictional continents Westeros and Essos.',
         genre: 'Fantasy',
         origin: 'Novels by George R.R. Martin',
-        image: '',
+        image: './images/thrones.jpg',
         site: 'https://gameofthrones.fandom.com/wiki/Game_of_Thrones_Wiki'
     },
 ]
