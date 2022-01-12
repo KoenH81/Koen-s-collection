@@ -58,7 +58,7 @@ const universes = [
     {
         title: 'Multiverse (MTG)',
         description: 'Scifi fantasy setting taking place in a near-infinite number of different planes.',
-        genre: ['Scifi', 'Fanatsy']
+        genre: ['Scifi', 'Fanatsy'],
         origin: 'Magic the Gathering',
         image: './images/mtg.jpeg',
         site: 'https://mtg.fandom.com/wiki/Main_Page'
@@ -80,3 +80,34 @@ const universes = [
         site: 'https://gameofthrones.fandom.com/wiki/Game_of_Thrones_Wiki'
     },
 ]
+//console.log(universes)
+
+// create loop + create elements + append
+
+for (let i = 0; i < universes.length; i++) {
+    var card = document.createElement("div");
+    card.className = "card";
+    document.body.appendChild(card);
+
+    var image = document.createElement("div");
+    image.className = "image";
+    card.appendChild(image);
+
+    var title = document.createElement("div");
+    title.className = "title";
+    card.appendChild(title);
+
+    var genre = document.createElement("div");
+    genre.className = "genre";
+    card.appendChild(genre);
+
+    var description = document.createElement("div");
+    description.className = "description";
+    card.appendChild(description);
+
+    var site = document.createElement("div");
+    site.className = "site";
+    card.appendChild(site);
+
+}
+console.log(document.body.children) 
