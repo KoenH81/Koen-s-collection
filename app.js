@@ -82,7 +82,8 @@ const universes = [
 ]
 //console.log(universes)
 
-// create loop + create elements + append
+// create loop + create elements + append = done
+// create text nodes + append = done
 
 for (let i = 0; i < universes.length; i++) {
     var card = document.createElement("div");
@@ -92,22 +93,37 @@ for (let i = 0; i < universes.length; i++) {
     var image = document.createElement("div");
     image.className = "image";
     card.appendChild(image);
+    var imageImg = document.createElement("img");
+    imageImg.setAttribute("src", universes[i].image);
+    image.appendChild(imageImg);
 
     var title = document.createElement("div");
     title.className = "title";
     card.appendChild(title);
+    var titleText = document.createTextNode(universes[i].title);
+    title.appendChild(titleText);
 
     var genre = document.createElement("div");
     genre.className = "genre";
     card.appendChild(genre);
+    var genreText = document.createTextNode(universes[i].genre);
+    genre.appendChild(genreText);
 
     var description = document.createElement("div");
     description.className = "description";
     card.appendChild(description);
+    var descriptionText = document.createTextNode(universes[i].description);
+    description.appendChild(descriptionText);
+    var originText = document.createTextNode(universes[i].origin);
+    description.appendChild(originText);
 
     var site = document.createElement("div");
     site.className = "site";
     card.appendChild(site);
+    var siteAnker = document.createElement("a");
+    siteAnker.setAttribute("href", universes[i].site);
+    siteAnker.innerText = "Wiki";
+    site.appendChild(siteAnker);
 
 }
 console.log(document.body.children) 
