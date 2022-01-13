@@ -44,7 +44,7 @@ const universes = [
         description: 'Scifi setting set in a galaxy far, far away.',
         genre: ['Scifi'],
         origin: 'George Lucas',
-        image: './image/star.jpg',
+        image: './images/war.jpg',
         site: 'https://starwars.fandom.com/wiki/Main_Page'
     },
     {
@@ -145,4 +145,4 @@ for (let i = 0; i < universes.length; i++) {
     siteTitle.append(siteTitleText);
     site.append(siteTitle);
 }
-console.log(document.body.children) 
+
