@@ -4,12 +4,33 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
+  font-family: sans-serif;
   color: black;
 }
 
 body {
-  width: 100%;
-  background-color: grey;
+  width: 100vw;
+  background-color: black;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .hoofd {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body header .hoofd p {
+  position: relative;
+  color: hotpink;
+  font-size: 2em;
+  text-shadow: 0 0 2px white;
+  text-shadow: 0 0 20px hotpink;
 }
 
 body .display {
@@ -23,29 +44,39 @@ body .display {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 5px;
-  background-image: url(./images/galaxy.jpg);
+  background-image: url(./images/galaxy2.jpg);
+  padding-top: 5px;
 }
 
 body .display .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 300px;
+  height: 350px;
   margin: auto;
   border-radius: 5px;
 }
 
-body .display .card .image {
+body .display .image {
   height: 160px;
   border-radius: 5px;
   border-right: 2px solid black;
+  border-bottom: 2px solid black;
   overflow: hidden;
 }
 
-body .display .card .image img {
+body .display .image img {
   width: 110%;
   display: block;
   border-radius: 5px;
 }
 
-body .display .card .title {
+body .display .title {
   width: 98%;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.4);
@@ -54,7 +85,7 @@ body .display .card .title {
   text-align: center;
 }
 
-body .display .card .genre {
+body .display .genre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,7 +102,7 @@ body .display .card .genre {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-body .display .card .genre .genreType {
+body .display .genre .genreType {
   width: 80px;
   background-color: #fefefe;
   border: 1px solid grey;
@@ -80,9 +111,12 @@ body .display .card .genre .genreType {
   text-align: center;
 }
 
-body .display .card .description {
+body .display .description {
   position: relative;
   width: 98%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin: auto;
   border-right: 2px solid black;
   background-color: rgba(255, 255, 255, 0.4);
@@ -90,7 +124,7 @@ body .display .card .description {
   padding-bottom: 2px;
 }
 
-body .display .card .description:after {
+body .display .description:after {
   content: '';
   position: absolute;
   width: 20%;
@@ -103,7 +137,7 @@ body .display .card .description:after {
   left: 0;
 }
 
-body .display .card .origin {
+body .display .origin {
   width: 98%;
   margin: auto;
   border-right: 2px solid black;
@@ -111,7 +145,7 @@ body .display .card .origin {
   padding-bottom: 2px;
 }
 
-body .display .card .site {
+body .display .site {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,6 +153,7 @@ body .display .card .site {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5px;
+  border-top: 2px solid black;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
   height: 30px;
@@ -126,7 +161,7 @@ body .display .card .site {
   padding-left: 5px;
 }
 
-body .display .card .site .search {
+body .display .site .search {
   display: block;
   border: 1px solid black;
   border-radius: 20px;
@@ -134,8 +169,60 @@ body .display .card .site .search {
           box-shadow: 3px 2px black;
 }
 
-body .display .card .site .search:hover {
+body .display .site .search:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+body .display .site .siteTitle {
+  margin: auto;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body .display {
+    width: 95%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body .display .card:hover .title {
+    display: block;
+  }
+  body .display .card:hover .genre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .display .card:hover .description {
+    display: block;
+  }
+  body .display .card:hover .origin {
+    display: block;
+  }
+  body .display .card:hover .site .siteTitle {
+    display: none;
+  }
+  body .display .card .title {
+    display: none;
+  }
+  body .display .card .genre {
+    display: none;
+  }
+  body .display .card .description {
+    display: none;
+  }
+  body .display .card .origin {
+    display: none;
+  }
+  body .display .card .site .siteTitle {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

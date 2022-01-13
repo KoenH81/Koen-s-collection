@@ -80,6 +80,7 @@ const universes = [
         site: 'https://gameofthrones.fandom.com/wiki/Game_of_Thrones_Wiki'
     },
 ]
+
 var display = document.createElement("div");
 display.className = "display";
 document.body.append(display);
@@ -129,10 +130,8 @@ for (let i = 0; i < universes.length; i++) {
     var site = document.createElement("div");
     site.className = "site";
     card.appendChild(site);
+
     var siteAnker = document.createElement("a");
-    // siteAnker.setAttribute("href", universes[i].site,);
-    // siteAnker.innerText = "Wiki";
-    // site.appendChild(siteAnker);
     siteAnker.href = universes[i].site;
     var search = document.createElement("img");
     search.className = "search";
@@ -140,5 +139,10 @@ for (let i = 0; i < universes.length; i++) {
     site.append(siteAnker);
     siteAnker.append(search);
 
+    var siteTitle = document.createElement("p");
+    siteTitle.className = "siteTitle";
+    var siteTitleText = document.createTextNode(universes[i].title);
+    siteTitle.append(siteTitleText);
+    site.append(siteTitle);
 }
 console.log(document.body.children) 
