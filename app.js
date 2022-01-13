@@ -58,7 +58,7 @@ const universes = [
     {
         title: 'Multiverse (MTG)',
         description: 'Scifi fantasy setting taking place in a near-infinite number of different planes.',
-        genre: ['Scifi', 'Fanatsy'],
+        genre: ['Scifi', 'Fantasy'],
         origin: 'Magic the Gathering',
         image: './images/mtg.jpeg',
         site: 'https://mtg.fandom.com/wiki/Main_Page'
