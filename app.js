@@ -79,6 +79,22 @@ const universes = [
         image: './images/thrones.jpg',
         site: 'https://gameofthrones.fandom.com/wiki/Game_of_Thrones_Wiki'
     },
+    // {
+    //     title: 'Harry Potter',
+    //     description: 'Parallel fictional reality where magic exists.',
+    //     genre: ['Fantasy'],
+    //     origin: 'Novels by J.K. Rowling',
+    //     image: './images/harry.jpg',
+    //     site: 'https://harrypotter.fandom.com/wiki/Main_Page'
+    // },
+    {
+        title: 'World of A Song of Ice and Fire',
+        description: 'Fantasy setting taking place on the fictional continents Westeros and Essos.',
+        genre: ['Fantasy'],
+        origin: 'Novels by George R.R. Martin',
+        image: './images/thrones.jpg',
+        site: 'https://gameofthrones.fandom.com/wiki/Game_of_Thrones_Wiki'
+    },
 ]
 
 var display = document.createElement("div");

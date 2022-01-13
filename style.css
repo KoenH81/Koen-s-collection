@@ -77,7 +77,7 @@ body .display .card {
   border-radius: 5px;
 }
 
-body .display .image {
+body .display .card .image {
   position: relative;
   height: 160px;
   border-radius: 5px;
@@ -86,7 +86,7 @@ body .display .image {
   overflow: hidden;
 }
 
-body .display .image::before {
+body .display .card .image::before {
   content: '';
   position: absolute;
   background-color: white;
@@ -96,13 +96,13 @@ body .display .image::before {
   border-bottom: 2px solid black;
 }
 
-body .display .image img {
+body .display .card .image img {
   width: 110%;
   display: block;
   border-radius: 5px;
 }
 
-body .display .title {
+body .display .card .title {
   width: 98%;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.4);
@@ -111,7 +111,7 @@ body .display .title {
   text-align: center;
 }
 
-body .display .genre {
+body .display .card .genre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,7 +128,7 @@ body .display .genre {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-body .display .genre .genreType {
+body .display .card .genre .genreType {
   width: 80px;
   background-color: #fefefe;
   border: 1px solid grey;
@@ -137,7 +137,7 @@ body .display .genre .genreType {
   text-align: center;
 }
 
-body .display .description {
+body .display .card .description {
   position: relative;
   width: 98%;
   -webkit-box-flex: 1;
@@ -150,7 +150,7 @@ body .display .description {
   padding-bottom: 2px;
 }
 
-body .display .description:after {
+body .display .card .description:after {
   content: '';
   position: absolute;
   width: 20%;
@@ -163,7 +163,7 @@ body .display .description:after {
   left: 0;
 }
 
-body .display .origin {
+body .display .card .origin {
   width: 98%;
   margin: auto;
   border-right: 2px solid black;
@@ -171,7 +171,7 @@ body .display .origin {
   padding-bottom: 2px;
 }
 
-body .display .site {
+body .display .card .site {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,7 +187,7 @@ body .display .site {
   padding-left: 5px;
 }
 
-body .display .site .search {
+body .display .card .site .search {
   display: block;
   border: 1px solid black;
   border-radius: 20px;
@@ -195,17 +195,30 @@ body .display .site .search {
           box-shadow: 3px 2px black;
 }
 
-body .display .site .search:hover {
+body .display .card .site .search:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-body .display .site .siteTitle {
+body .display .card .site .siteTitle {
   margin: auto;
   display: none;
 }
 
+body footer {
+  background-color: white;
+  width: 100vw;
+  margin-top: 10px;
+}
+
+body footer p {
+  font-size: 0.5em;
+}
+
 @media only screen and (min-width: 768px) {
+  body header .hoofd p {
+    font-size: 3em;
+  }
   body .display {
     width: 95%;
     -webkit-box-orient: horizontal;
@@ -218,6 +231,9 @@ body .display .site .siteTitle {
 }
 
 @media only screen and (min-width: 1024px) {
+  body header .hoofd p {
+    font-size: 4em;
+  }
   body .display .card:hover .title {
     display: block;
   }
