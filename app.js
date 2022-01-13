@@ -79,21 +79,45 @@ const universes = [
         image: './images/thrones.jpg',
         site: 'https://gameofthrones.fandom.com/wiki/Game_of_Thrones_Wiki'
     },
-    // {
-    //     title: 'Harry Potter',
-    //     description: 'Parallel fictional reality where magic exists.',
-    //     genre: ['Fantasy'],
-    //     origin: 'Novels by J.K. Rowling',
-    //     image: './images/harry.jpg',
-    //     site: 'https://harrypotter.fandom.com/wiki/Main_Page'
-    // },
     {
-        title: 'World of A Song of Ice and Fire',
-        description: 'Fantasy setting taking place on the fictional continents Westeros and Essos.',
+        title: 'Harry Potter',
+        description: 'Parallel fictional reality where magic exists.',
         genre: ['Fantasy'],
-        origin: 'Novels by George R.R. Martin',
-        image: './images/thrones.jpg',
-        site: 'https://gameofthrones.fandom.com/wiki/Game_of_Thrones_Wiki'
+        origin: 'Novels by J.K. Rowling',
+        image: './images/harry.jpg',
+        site: 'https://harrypotter.fandom.com/wiki/Main_Page'
+    },
+    {
+        title: 'Witcher',
+        description: 'Unnamed planet with low-magic and monsters.',
+        genre: ['Fantasy', 'Medieval'],
+        origin: 'Novels by Andrzej Sapkowski',
+        image: './images/witcher.jpg',
+        site: 'https://witcher.fandom.com/wiki/Witcher_Wiki'
+    },
+    {
+        title: 'Fallout',
+        description: 'Alternate timeline on earth during and after a nuclear disaster',
+        genre: ['Scifi'],
+        origin: 'Interplay Entertainment, Obsidian, Bethesda',
+        image: './images/fallout.jpg',
+        site: 'https://fallout.fandom.com/wiki/Fallout_Wiki'
+    },
+    {
+        title: 'The Elder Scrolls',
+        description: 'Fantasy setting mainly taking place on the continent of Tamriel on the fictional world Nirn.',
+        genre: ['Fantasy'],
+        origin: 'Bethesda',
+        image: './images/scroll.jpg',
+        site: 'https://fallout.fandom.com/wiki/Fallout_Wiki'
+    },
+    {
+        title: 'World of Darkness',
+        description: 'Fantasy, horror setting taking place on an alternate earth.',
+        genre: ['Fantasy', 'Grimdark', 'Mordern', 'Horror'],
+        origin: 'Vampire: The Masquerade',
+        image: './images/vampire.jpg',
+        site: 'https://whitewolf.fandom.com/wiki/World_of_Darkness'
     },
 ]
 
