@@ -66,7 +66,7 @@ const universes = [
     {
         title: 'Middle-earth',
         description: 'Classical fantassy setting. The origin of a lot of fantasy tropes.',
-        genre: ['Fanatsy'],
+        genre: ['Fantasy'],
         origin: 'Novels by J.R.R Tolkien',
         image: './images/tolkien.jpg',
         site: 'https://lotr.fandom.com/wiki/Middle-earth'

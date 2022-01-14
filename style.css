@@ -60,7 +60,12 @@ body .display {
           flex-direction: column;
   gap: 5px;
   background-image: url(./images/galaxy2.jpg);
-  padding-top: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 5px solid hotpink;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px hotpink, 0 0 5px white;
+          box-shadow: 0 0 20px hotpink, 0 0 5px white;
 }
 
 body .display .card {
@@ -131,7 +136,9 @@ body .display .card .genre {
 body .display .card .genre .genreType {
   width: 80px;
   background-color: #fefefe;
-  border: 1px solid grey;
+  border: 2px solid hotpink;
+  -webkit-box-shadow: 0 0 20px hotpink, 0 0 5px white;
+          box-shadow: 0 0 20px hotpink, 0 0 5px white;
   border-radius: 25px;
   padding: 2px;
   text-align: center;
@@ -147,6 +154,7 @@ body .display .card .description {
   border-right: 2px solid black;
   background-color: rgba(255, 255, 255, 0.4);
   text-align: center;
+  line-height: 20px;
   padding-bottom: 2px;
 }
 
@@ -227,6 +235,10 @@ body footer p {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    border: 10px solid hotpink;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0 20px hotpink, 0 0 5px white;
+            box-shadow: 0 0 20px hotpink, 0 0 5px white;
   }
 }
 
