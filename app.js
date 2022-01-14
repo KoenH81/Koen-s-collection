@@ -125,8 +125,20 @@ var display = document.createElement("div");
 display.className = "display";
 document.body.append(display);
 
+// sort alphabetically
 
-for (let i = 0; i < universes.length; i++) {
+function SortArray(x, y) {
+    if (x.title < y.title) { return -1; }
+    if (x.title > y.title) { return 1; }
+    return 0;
+}
+
+const universesS = universes.sort(SortArray);
+console.log(universesS);
+
+
+// create divs + append
+for (let i = 0; i < universesS.length; i++) {
     var card = document.createElement("div");
     card.className = "card";
     display.appendChild(card);
@@ -135,36 +147,36 @@ for (let i = 0; i < universes.length; i++) {
     image.className = "image";
     card.appendChild(image);
     var imageImg = document.createElement("img");
-    imageImg.setAttribute("src", universes[i].image);
+    imageImg.setAttribute("src", universesS[i].image);
     image.appendChild(imageImg);
 
     var title = document.createElement("div");
     title.className = "title";
     card.appendChild(title);
-    var titleText = document.createTextNode(universes[i].title);
+    var titleText = document.createTextNode(universesS[i].title);
     title.appendChild(titleText);
 
     var genre = document.createElement("div");
     genre.className = "genre";
     card.appendChild(genre);
-    for (let x = 0; x < universes[i].genre.length; x++) {
+    for (let x = 0; x < universesS[i].genre.length; x++) {
         var genreType = document.createElement("div");
         genreType.className = "genreType";
         genre.append(genreType);
-        var genreTypeText = document.createTextNode(universes[i].genre[x])
+        var genreTypeText = document.createTextNode(universesS[i].genre[x])
         genreType.append(genreTypeText);
     }
 
     var description = document.createElement("div");
     description.className = "description";
     card.appendChild(description);
-    var descriptionText = document.createTextNode(universes[i].description);
+    var descriptionText = document.createTextNode(universesS[i].description);
     description.appendChild(descriptionText);
 
     var origins = document.createElement("div");
     origins.className = "origin";
     card.append(origins);
-    var originText = document.createTextNode("Origin: " + universes[i].origin);
+    var originText = document.createTextNode("Origin: " + universesS[i].origin);
     origins.appendChild(originText);
 
     var site = document.createElement("div");
@@ -172,7 +184,7 @@ for (let i = 0; i < universes.length; i++) {
     card.appendChild(site);
 
     var siteAnker = document.createElement("a");
-    siteAnker.href = universes[i].site;
+    siteAnker.href = universesS[i].site;
     var search = document.createElement("img");
     search.className = "search";
     search.setAttribute("src", "./images/search.jpg");
@@ -181,7 +193,7 @@ for (let i = 0; i < universes.length; i++) {
 
     var siteTitle = document.createElement("p");
     siteTitle.className = "siteTitle";
-    var siteTitleText = document.createTextNode(universes[i].title);
+    var siteTitleText = document.createTextNode(universesS[i].title);
     siteTitle.append(siteTitleText);
     site.append(siteTitle);
 }
