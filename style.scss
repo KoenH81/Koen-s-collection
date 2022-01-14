@@ -21,8 +21,7 @@ body{
                 position: relative;
                 color: $neon;
                 font-size: 2em;
-                text-shadow: 0 0 3px white;
-                text-shadow: 0 0 20px $neon;
+                text-shadow: 0 0 4px white, 0 0 20px $neon;
                 &::after{
                     content: '';
                     position: absolute;

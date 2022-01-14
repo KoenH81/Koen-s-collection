@@ -185,4 +185,4 @@ for (let i = 0; i < universes.length; i++) {
     siteTitle.append(siteTitleText);
     site.append(siteTitle);
 }
-
+console.log(document.body.children)

@@ -30,8 +30,7 @@ body header .hoofd p {
   position: relative;
   color: hotpink;
   font-size: 2em;
-  text-shadow: 0 0 3px white;
-  text-shadow: 0 0 20px hotpink;
+  text-shadow: 0 0 4px white, 0 0 20px hotpink;
 }
 
 body header .hoofd p::after {

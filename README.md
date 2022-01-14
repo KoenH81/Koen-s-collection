@@ -12,6 +12,11 @@ Item List:
 - Multiverse (MTG)
 - Middle-earth
 - World of A Song of Ice and Fire
+- Harry potter
+- witcher
+- fallout
+- elder scrolls
+- The World of Darkness
 
 Card information:
 
