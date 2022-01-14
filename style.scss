@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style-type: none;
     font-family: sans-serif;
     color: black;
 }
@@ -35,6 +36,37 @@ body{
                     transform: perspective(1.5em) rotatex(35deg);
                 }
             }
+        }
+    }
+    .filter{
+        display: flex;
+        .filterIcon{
+            margin: 5px;
+            img{
+                background-color: #fefefe;
+                border: 2px solid hotpink;
+                box-shadow: 0 0 20px hotpink, 0 0 5px white;
+                border-radius: 25px;
+                padding: 2px;
+            }
+        }
+        .filterBtns{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 5px;
+            .filterBtn{
+                //display: none;
+                width: 80px;
+                background-color: #fefefe;
+                border: 2px solid hotpink;
+                box-shadow: 0 0 20px hotpink, 0 0 5px white;
+                border-radius: 25px;
+                margin: auto;
+                margin-bottom: 5px;
+                padding: 2px;
+                text-align: center;
+            }
+
         }
     }
     .display{
@@ -148,14 +180,16 @@ body{
                 border-top: 2px solid black;
                 border-right: 2px solid black;
                 border-bottom: 2px solid black;
-                height: 30px;
+                height: 35px;
                 background-color: #fefefe;
                 padding-left: 5px;
                 .search{
-                    display: block;
-                    border: 1px solid black;
-                    border-radius: 20px;
-                    box-shadow: 3px 2px black;
+                    margin-top: 5px;
+                    background-color: #fefefe;
+                    border: 2px solid hotpink;
+                    box-shadow: 0 0 10px hotpink, 0 0 5px white;
+                    border-radius: 25px;
+                    padding: 2px;
                     &:hover{
                         box-shadow: none;
                     }
@@ -186,6 +220,15 @@ body{
                 }
             }
         }
+        .filter{
+            .filterIcon{
+                margin-left: 20px;
+            }
+            .filterBtns{
+                flex: 1;
+                padding-right: 10px;
+            }
+        }
         .display{
             width: 95%;
             flex-direction: row;
@@ -202,6 +245,18 @@ body{
             .hoofd{
                 p{
                     font-size: 4em;
+                }
+            }
+        }
+        .filter{
+            .filterIcon{
+                margin-left: 40px;
+            }
+            .filterBtns{              
+                .filterBtn{
+                    margin-right: 10px;
+                    margin-left: 10px;
+
                 }
             }
         }

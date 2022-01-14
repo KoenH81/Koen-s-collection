@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
+  list-style-type: none;
   font-family: sans-serif;
   color: black;
 }
@@ -46,6 +47,47 @@ body header .hoofd p::after {
   opacity: 0.4;
   -webkit-transform: perspective(1.5em) rotatex(35deg);
           transform: perspective(1.5em) rotatex(35deg);
+}
+
+body .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .filter .filterIcon {
+  margin: 5px;
+}
+
+body .filter .filterIcon img {
+  background-color: #fefefe;
+  border: 2px solid hotpink;
+  -webkit-box-shadow: 0 0 20px hotpink, 0 0 5px white;
+          box-shadow: 0 0 20px hotpink, 0 0 5px white;
+  border-radius: 25px;
+  padding: 2px;
+}
+
+body .filter .filterBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 5px;
+}
+
+body .filter .filterBtns .filterBtn {
+  width: 80px;
+  background-color: #fefefe;
+  border: 2px solid hotpink;
+  -webkit-box-shadow: 0 0 20px hotpink, 0 0 5px white;
+          box-shadow: 0 0 20px hotpink, 0 0 5px white;
+  border-radius: 25px;
+  margin: auto;
+  margin-bottom: 5px;
+  padding: 2px;
+  text-align: center;
 }
 
 body .display {
@@ -190,17 +232,19 @@ body .display .card .site {
   border-top: 2px solid black;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
-  height: 30px;
+  height: 35px;
   background-color: #fefefe;
   padding-left: 5px;
 }
 
 body .display .card .site .search {
-  display: block;
-  border: 1px solid black;
-  border-radius: 20px;
-  -webkit-box-shadow: 3px 2px black;
-          box-shadow: 3px 2px black;
+  margin-top: 5px;
+  background-color: #fefefe;
+  border: 2px solid hotpink;
+  -webkit-box-shadow: 0 0 10px hotpink, 0 0 5px white;
+          box-shadow: 0 0 10px hotpink, 0 0 5px white;
+  border-radius: 25px;
+  padding: 2px;
 }
 
 body .display .card .site .search:hover {
@@ -227,6 +271,15 @@ body footer p {
   body header .hoofd p {
     font-size: 3em;
   }
+  body .filter .filterIcon {
+    margin-left: 20px;
+  }
+  body .filter .filterBtns {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-right: 10px;
+  }
   body .display {
     width: 95%;
     -webkit-box-orient: horizontal;
@@ -245,6 +298,13 @@ body footer p {
 @media only screen and (min-width: 1024px) {
   body header .hoofd p {
     font-size: 4em;
+  }
+  body .filter .filterIcon {
+    margin-left: 40px;
+  }
+  body .filter .filterBtns .filterBtn {
+    margin-right: 10px;
+    margin-left: 10px;
   }
   body .display .card:hover .title {
     display: block;
