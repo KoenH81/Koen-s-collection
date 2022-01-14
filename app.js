@@ -121,26 +121,25 @@ const universes = [
     },
 ]
 
+// create card container
 var display = document.createElement("div");
 display.className = "display";
 document.body.append(display);
 
 // sort alphabetically
-
 function SortArray(x, y) {
     if (x.title < y.title) { return -1; }
     if (x.title > y.title) { return 1; }
     return 0;
 }
-
 const universesS = universes.sort(SortArray);
-console.log(universesS);
 
-
-// create divs + append
+// create card + append content
 for (let i = 0; i < universesS.length; i++) {
     var card = document.createElement("div");
     card.className = "card";
+    card.id = i;
+    card.style.display = 'none';
     display.appendChild(card);
 
     var image = document.createElement("div");
@@ -197,4 +196,13 @@ for (let i = 0; i < universesS.length; i++) {
     siteTitle.append(siteTitleText);
     site.append(siteTitle);
 }
-console.log(document.body.children)
+//create filter for genre: fantasy
+for (let i = 0; i < universesS.length; i++) {
+    for (let x = 0; x < universesS[i].genre.length; x++) {
+        if (universesS[i].genre[x] === 'Fantasy') {
+            var fanId = document.getElementById(i);
+            fanId.style.display = 'flex';
+        }
+    }
+};
+
