@@ -204,5 +204,17 @@ for (let i = 0; i < universesS.length; i++) {
             fanId.style.display = 'flex';
         }
     }
-};
+}
+// create filter show/hide function
+function filterShow() {
+    var x = document.getElementById("filterBtns");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+    }
+    else {
+        x.style.display = "none";
+    }
+}
+document.getElementById("filterImg").addEventListener("click", filterShow);
+
 
