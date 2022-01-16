@@ -197,8 +197,30 @@ for (let i = 0; i < universesS.length; i++) {
     site.append(siteTitle);
 }
 //create filter for genre: fantasy
+//still needs an off-state. maybe look for display = none?
 
-//document.getElementById("fanBtn").addEventListener("click", noCard; filterFan);
+// let clickFan = document.getElementById("fanBtn");
+// clickFan.addEventListener('click', filterOnOff);
+
+// function filterOnOff() {
+//     for (let i = 0; i < universesS.length; i++) {
+//         var checkCard = document.getElementById(i);
+//         if (checkCard.style.display === 'none') {
+//             for (let i = 0; i < universesS.length; i++)
+//                 checkCard.style.display = 'flex';
+//             //break;
+//         }
+//         else {
+//             noCard;
+//             filterFan;
+//         }
+//     }
+// }
+
+
+
+
+
 let thisBetterFuckingWorks = document.getElementById("fanBtn");
 thisBetterFuckingWorks.addEventListener('click', noCard);
 thisBetterFuckingWorks.addEventListener('click', filterFan);
@@ -220,6 +242,7 @@ function filterFan() {
         }
     }
 }
+
 // create filter show/hide function
 function filterShow() {
     var x = document.getElementById("filterBtns");
