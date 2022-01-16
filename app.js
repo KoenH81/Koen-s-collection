@@ -139,7 +139,7 @@ for (let i = 0; i < universesS.length; i++) {
     var card = document.createElement("div");
     card.className = "card";
     card.id = i;
-    card.style.display = 'none';
+    //card.style.display = 'none';
     display.appendChild(card);
 
     var image = document.createElement("div");
@@ -197,11 +197,26 @@ for (let i = 0; i < universesS.length; i++) {
     site.append(siteTitle);
 }
 //create filter for genre: fantasy
-for (let i = 0; i < universesS.length; i++) {
-    for (let x = 0; x < universesS[i].genre.length; x++) {
-        if (universesS[i].genre[x] === 'Fantasy') {
-            var fanId = document.getElementById(i);
-            fanId.style.display = 'flex';
+
+//document.getElementById("fanBtn").addEventListener("click", noCard; filterFan);
+let thisBetterFuckingWorks = document.getElementById("fanBtn");
+thisBetterFuckingWorks.addEventListener('click', noCard);
+thisBetterFuckingWorks.addEventListener('click', filterFan);
+
+function noCard() {
+    for (let i = 0; i < universesS.length; i++) {
+        var noCard = document.getElementById(i);
+        noCard.style.display = 'none';
+    }
+}
+
+function filterFan() {
+    for (let i = 0; i < universesS.length; i++) {
+        for (let x = 0; x < universesS[i].genre.length; x++) {
+            if (universesS[i].genre[x] === 'Fantasy') {
+                var fanId = document.getElementById(i);
+                fanId.style.display = 'flex';
+            }
         }
     }
 }
