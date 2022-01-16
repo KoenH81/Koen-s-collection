@@ -51,11 +51,10 @@ body{
             }
         }
         .filterBtns{
-            display: flex;
+            display: none;
             flex-wrap: wrap;
             margin: 5px;
             .filterBtn{
-                //display: none;
                 width: 80px;
                 background-color: #fefefe;
                 border: 2px solid hotpink;

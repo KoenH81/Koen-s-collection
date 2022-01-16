@@ -69,9 +69,7 @@ body .filter .filterIcon img {
 }
 
 body .filter .filterBtns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 5px;
